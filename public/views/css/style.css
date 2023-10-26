@@ -1,0 +1,122 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+.container-from{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    background-color: #1a1a1a;
+    height: 550px;
+    width: 400px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.container-from h2{
+    margin: 0;
+    /* margin-bottom: 20px; */
+    /* padding: 10px; */
+    font-size: 40px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container-from p{
+    margin: 0;
+    margin-top: -5px;
+    color: gray;
+}
+.container-from form{
+    margin: 0;
+    margin-top: 30px;
+}
+.container-from input{
+    color: aliceblue;
+    font-size: 18px;
+    width: 80%;
+    padding-left:20px ;
+    height: 60px;
+    background-color: #2d2d2d;
+    border-radius: 10px;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.container-from #submit{
+    margin-left: -50;
+    border-radius: 5px;
+    position: relative;
+    width: 100px;
+    height: 50px;
+    padding:0px;
+    color: #252525;
+    background-color: white;
+    font-weight: 750;
+    transition: 0.3s ease-in-out;
+}
+
+#qrcodeLogin{
+    display: inline-block;
+    position: absolute;
+    border-radius: 5px;
+    border: none;
+    right: 118;
+    bottom:117px;
+    width: 50px;
+    height: 50px;
+
+}
+.container-from #submit:active, #qrcodeLogin:active{
+    background-color: #252525;
+    color: white;
+}
+.container-from a{
+    text-decoration: none;
+    color: aquamarine;
+}
+.container-from .feature{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-from button:active{
+    background-color: aquamarine;
+    color: white;
+}
+
+canvas{
+    height: 550px;
+    margin: 10px;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+.canvas_isDisplay{
+    visibility: visible;
+    animation: canvas_isDisplay 0.3s ease-in-out;
+}
+
+@keyframes canvas_isDisplay{
+    0%{
+        transform: translateX(-10%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+#video{
+    display: none;
+}
+#error-code{
+    color: red;
+}

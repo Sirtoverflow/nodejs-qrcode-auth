@@ -1,0 +1,168 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.container-from {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    background-color: #1a1a1a;
+    height: 550px;
+    width: 400px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-from h2 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.container-from p {
+    margin: 0;
+    margin-top: -5px;
+    color: gray;
+}
+
+.container-from form {
+    margin-top: 30px;
+}
+
+.container-from input {
+    color: aliceblue;
+    font-size: 18px;
+    width: 80%;
+    padding-left: 20px;
+    height: 60px;
+    background-color: #2d2d2d;
+    border-radius: 10px;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.container-from #submit {
+    width: 100px;
+    height: 60px;
+    padding: 0px;
+    color: #252525;
+    background-color: white;
+    font-weight: 750;
+    margin-top: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.container-from #submit:active {
+    background-color: #252525;
+    color: white;
+}
+
+.container-from a {
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.container-from .feature {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-from button {
+    border-radius: 5px;
+    margin: 5px 5px 5px 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    right: 118;
+    bottom:118;
+    width: 60px;
+    height: 40px;
+}
+#QRcodeshow{
+    width: 40px;
+
+}
+.container-from button:active {
+    background-color: #252525;
+    color: white;
+}
+
+#username {
+    color: aquamarine;
+    text-decoration: underline;
+}
+
+.setting-icon {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+}
+
+.settingBox {
+    visibility: hidden;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
+    transform: scale(0.1);
+
+}
+
+.settingBox-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.settingBox-content p {
+    margin: 0;
+}
+
+.settingBox-content h2 {
+    margin-top: 0;
+}
+
+.settingBox.active {
+    visibility: visible;
+    opacity: 0.92;
+    transform: translateX(0);
+}
+
+.settingBox-content-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.settingBox-content .textBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    background-color: #000000;
+    color: white;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
